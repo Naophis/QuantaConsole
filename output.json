@@ -1,0 +1,19 @@
+{
+	"data": [
+		{
+			"id": 0,
+			"name": "wheel",
+			"value": "20433"
+		},
+		{
+			"id": 1,
+			"name": "test",
+			"value": "123"
+		},
+		{
+			"id": 2,
+			"name": "aaa",
+			"value": "fsfs"
+		}
+	]
+}
