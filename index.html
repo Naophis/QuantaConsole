@@ -6,14 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quanta Console</title>
+
+    <link rel="stylesheet" href="css/jquery.toast.min.css">
     <script src="js/socket.io.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/angular.min.js"></script>
+    <script src="js/jquery.toast.min.js"></script>
 
 </head>
 
 <body ng-controller="HelloWorldController">
     <button ng-click="load()">LOAD</button>
+    <button ng-click="connect()">Connect</button>
+    <button ng-click="disconnect()">Disconnect</button>
 
     <ul>
         <li ng-repeat="param in paramList" style="width:700px;">

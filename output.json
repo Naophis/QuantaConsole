@@ -3,17 +3,12 @@
 		{
 			"id": 0,
 			"name": "wheel",
-			"value": "20433"
+			"value": "24.123532131315532131312"
 		},
 		{
 			"id": 1,
-			"name": "test",
-			"value": "123"
-		},
-		{
-			"id": 2,
-			"name": "aaa",
-			"value": "fsfs"
+			"name": "mass",
+			"value": "125.0"
 		}
 	]
 }
