@@ -65,9 +65,7 @@ io.sockets.on('connection', function (socket) {
 						}
 						head = false;
 						writeFile("output.json", JSON.stringify(saveData, null, '\t'));
-						sp.write(`{${res.id}:${res.value}}`, function () {
-							console.log("send");
-						});
+						sp.write(`{${res.id}:${res.value}}`, function () {});
 					}
 				}
 				if (head) {

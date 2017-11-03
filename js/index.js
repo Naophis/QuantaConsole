@@ -30,7 +30,10 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
         var map = $scope.paramList.filter(function (param) {
             return param.id === id;
         });
-        if ($.isNumeric(map[0].value)) {
+        if ($.isNumeric(map[0].value) &&
+            !$.isNumeric(map[0].name &&
+                typeof map[0].name === "string" &&
+                map[0].name.length > 0)) {
             socket.emit("update", {
                 id: map[0].id,
                 name: map[0].name,

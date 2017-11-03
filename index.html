@@ -8,17 +8,26 @@
     <title>Quanta Console</title>
 
     <link rel="stylesheet" href="css/jquery.toast.min.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="js/socket.io.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/jquery.toast.min.js"></script>
-
+    <link rel="stylesheet" href="css/material.min.css">
+    <script src="js/material.min.js"></script>
+    <link rel="stylesheet" href="css/icon.css">
 </head>
 
 <body ng-controller="HelloWorldController">
-    <button ng-click="load()">LOAD</button>
-    <button ng-click="connect()">Connect</button>
-    <button ng-click="disconnect()">Disconnect</button>
+    <button ng-click="load()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        LOAD
+    </button>
+    <button ng-click="connect()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Connect
+    </button>
+    <button ng-click="disconnect()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Disconnect
+    </button>
 
     <ul>
         <li ng-repeat="param in paramList" style="width:700px;">

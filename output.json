@@ -3,12 +3,27 @@
 		{
 			"id": 0,
 			"name": "wheel",
-			"value": "24.123532131315532131312"
+			"value": "24.666575"
 		},
 		{
 			"id": 1,
 			"name": "mass",
-			"value": "125.0"
+			"value": "80.0"
+		},
+		{
+			"id": 2,
+			"name": "tread",
+			"value": "74"
+		},
+		{
+			"id": 3,
+			"name": "test",
+			"value": "213213"
+		},
+		{
+			"id": 4,
+			"name": "aaaaa",
+			"value": "123213"
 		}
 	]
 }

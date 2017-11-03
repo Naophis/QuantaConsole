@@ -19,5 +19,12 @@
   "dependencies": {
     "serialport": "^4.0.7",
     "socket.io": "^1.7.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "gulp-postcss": "^7.0.0",
+    "postcss-custom-properties": "^6.2.0",
+    "postcss-nested": "^2.1.2",
+    "postcss-size": "^2.0.0"
   }
 }
