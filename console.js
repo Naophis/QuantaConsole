@@ -44,14 +44,14 @@ io.sockets.on('connection', function (socket) {
 			firstConnect = false;
 		}
 	});
-	// sp.on('data', function (data) {
-	// 	if (globalScoket) {
-	// 		globalScoket.emit('message', {
-	// 			message: data
-	// 		}, function (res) {});
-	// 	}
-	// 	console.log(data);
-	// });
+	sp.on('data', function (data) {
+		// if (globalScoket) {
+		// 	globalScoket.emit('message', {
+		// 		message: data
+		// 	}, function (res) { });
+		// }
+		console.log("response = \t"+data);
+	});
 	socket.on("update", function (res) {
 		if (res) {
 			readFile("output.json", function (json) {
@@ -65,6 +65,7 @@ io.sockets.on('connection', function (socket) {
 						}
 						head = false;
 						writeFile("output.json", JSON.stringify(saveData, null, '\t'));
+						console.log(`{${res.id}:${res.value}}`);
 						sp.write(`{${res.id}:${res.value}}`, function () {});
 					}
 				}

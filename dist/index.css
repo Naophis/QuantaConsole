@@ -1,24 +1,24 @@
- .button {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
+.button {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .button--large {
-  height: 50px;
-  font-size: 18px;
+    height: 50px;
+    font-size: 18px;
 }
 
 .button--red {
     color: #fff;
-   background-color: #e23B00;
+    background-color: #e23B00;
 }
 
 .button--blue {
     color: #fff;
-   background-color: #3f52e2;
+    background-color: #3f52e2;
 }

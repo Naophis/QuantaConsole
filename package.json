@@ -22,9 +22,15 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
     "postcss-custom-properties": "^6.2.0",
     "postcss-nested": "^2.1.2",
-    "postcss-size": "^2.0.0"
+    "postcss-size": "^2.0.0",
+    "riot": "^3.7.4",
+    "riot-route": "^3.1.2"
   }
 }

@@ -28,11 +28,15 @@
     <button ng-click="disconnect()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
         Disconnect
     </button>
-
     <ul>
-        <li ng-repeat="param in paramList" style="width:700px;">
+        <li ng-repeat="param in paramList" style="width:800px;">
             <div style="width:100px;float:left;">
-                {{param.id}}
+                <div ng-if="!param.isNew">
+                    {{param.id}}
+                </div>
+                <div ng-if="param.isNew">
+                    <input type="text" style="width:inherit;" ng-model="param.id">
+                </div>
             </div>
             <div style="width:100px;float:left;">
                 <div ng-if="!param.isNew">
@@ -47,6 +51,9 @@
             </div>
             <div style="width:100px;float:left;">
                 <button ng-click="update(param.id)">update</button>
+            </div>
+            <div style="width:150px;float:left;">
+                <input type="text" style="width:150px;" value="{{param.name}}=*(float *)({{param.id}});" />
             </div>
         </li>
     </ul>

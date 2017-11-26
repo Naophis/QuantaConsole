@@ -35,7 +35,7 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
                 typeof map[0].name === "string" &&
                 map[0].name.length > 0)) {
             socket.emit("update", {
-                id: map[0].id,
+                id: ~~map[0].id,
                 name: map[0].name,
                 value: map[0].value,
             });
@@ -69,7 +69,6 @@ app.controller('HelloWorldController', ['$scope', function ($scope) {
         $scope.paramList = res.data;
         let tmpLength = res.data.length;
         $scope.paramList.push({
-            id: tmpLength,
             isNew: true
         });
         $scope.$apply();
